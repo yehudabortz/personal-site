@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import './globals.css'
 import { Darker_Grotesque } from 'next/font/google'
+import Link from 'next/link'
 
 
 const inter = Darker_Grotesque({ subsets: ['latin'] })
@@ -16,8 +17,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={clsx(inter.className, "bg-neutral-200 text-black")}>{children}</body>
+    <html lang="en" >
+
+      <body className={clsx(inter.className, "bg-neutral-200 text-black max-w-screen-2xl w-[90vw] m-auto")} >
+        <nav className="flex w-full py-8">
+          <Link href="/Yehuda_Bortz_Resume.pdf" download="Yehuda_Bortz_Resume.pdf" target="_blank" className="text-bg text-xl ">
+            Resume
+          </Link>
+        </nav>
+        {children}
+        <footer className='min-h-[100px]'></footer>
+      </body>
     </html>
   )
 }
