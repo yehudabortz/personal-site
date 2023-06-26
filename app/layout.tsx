@@ -1,3 +1,4 @@
+import "server-only"
 import clsx from 'clsx'
 import './globals.css'
 import { Darker_Grotesque } from 'next/font/google'
