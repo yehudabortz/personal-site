@@ -21,7 +21,7 @@ export default function Home() {
             Email Me
           </Link>
         </div>
-        <div className="lg:w-1/2 w-20">
+        <div className="lg:w-1/2 w-32">
           <Image
             alt="Yehuda Bortz Profile Photo"
             width={1000}
