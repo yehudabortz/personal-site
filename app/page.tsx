@@ -9,8 +9,8 @@ export default function Home() {
           Resume
         </Link>
       </nav>
-      <div className="flex flex-row gap-4 max-w-screen-2xl w-[90vw] m-auto items-center" >
-        <div className="w-1/2 flex flex-col gap-4">
+      <div className="flex lg:flex-row flex-col flex-col-reverse lg:gap-4 gap-10  max-w-screen-2xl w-[90vw] m-auto lg:items-center items-start" >
+        <div className="lg:w-1/2 w-full flex flex-col gap-4">
           <h1 className="text-black text-8xl font-bold">
             Hey 👋
             <br />
@@ -26,10 +26,12 @@ export default function Home() {
             Email Me!
           </button>
 
-
         </div>
-        <div className="w-1/2">
-          <img
+        <div className="lg:w-1/2 w-2/3 ml-0">
+          <Image
+            alt="Yehuda Bortz Profile Photo"
+            width={1000}
+            height={1000}
             className="relative object-cover saturate-0 max-w-50 rounded"
             src="/yehuda_bortz_photo.jpg"
           />
