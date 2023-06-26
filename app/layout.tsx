@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" >
-
+      <meta property="og:image" content="/yehuda_bortz_photo.jpg" />
       <body className={clsx(inter.className, "bg-neutral-200 text-black max-w-screen-2xl w-[90vw] m-auto")} >
         <nav className="flex w-full py-8">
           <Link href="/Yehuda_Bortz_Resume.pdf" download="Yehuda_Bortz_Resume.pdf" target="_blank" className="text-bg text-xl underline underline-offset-8 decoration-1">
