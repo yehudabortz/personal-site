@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <div className="flex lg:flex-row flex-col flex-col-reverse lg:gap-4 gap-10  max-w-screen-2xl w-[90vw] m-auto lg:items-center items-start" >
+      <div className="flex lg:flex-row flex-col flex-col-reverse lg:gap-4 gap-4  max-w-screen-2xl w-[90vw] m-auto lg:items-center items-start" >
         <div className="lg:w-1/2 w-full flex flex-col gap-4">
           <h1 className="text-black lg:text-8xl text-6xl font-bold">
             Hey 👋
@@ -21,7 +21,7 @@ export default function Home() {
             Email Me!
           </Link>
         </div>
-        <div className="lg:w-1/2 w-2/3 ml-0">
+        <div className="lg:w-1/2 w-20">
           <Image
             alt="Yehuda Bortz Profile Photo"
             width={1000}
