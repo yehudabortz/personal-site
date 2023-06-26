@@ -17,7 +17,7 @@ export default function Home() {
           <p className="lg:text-2xl text-xl font-normal max-w-md">
             I'm a specialist in Frontend Engineering and UX Design, with a strong focus on delivering high-performance software rapidly and efficiently.
           </p>
-          <Link href="mailto:ybortz@yehudabortz.com?subject=Saying Hello From yehudabortz.com 🚀" className=" border-solid border-black w-max border-2 rounded-sm text-xl align-center py-2 px-6 mt-4">
+          <Link href="mailto:ybortz@yehudabortz.com?subject=Saying Hello From yehudabortz.com 🚀" className=" border-solid border-black w-max border-2 rounded-sm text-xl align-center px-6 mt-4 pt-2 pb-3">
             Email Me
           </Link>
         </div>
