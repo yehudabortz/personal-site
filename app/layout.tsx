@@ -9,7 +9,7 @@ const inter = Darker_Grotesque({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Yehuda Bortz | Software Engineer',
-  description: "I'm a specialist in Frontend Engineering and UX Design, with a strong focus on delivering high- performance software rapidly and efficiently.",
+  description: "I'm a specialist in Frontend Engineering and UX Design, with a strong focus on delivering high-performance software rapidly and efficiently.",
 }
 
 export default function RootLayout({
