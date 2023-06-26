@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="max-w-screen-2xl w-[90vw] m-auto">
       <nav className="flex w-full py-8">
-        <Link href={"google.com"} className="text-bg text-xl ">
+        <Link href="/Yehuda_Bortz_Resume.pdf" download="Yehuda_Bortz_Resume.pdf" target="_blank" className="text-bg text-xl ">
           Resume
         </Link>
       </nav>
@@ -22,9 +22,9 @@ export default function Home() {
           <p className="text-2xl font-normal max-w-md">
             I'm a specialist in Frontend Engineering and UX Design, with a strong focus on delivering high-performance software rapidly and efficiently.
           </p>
-          <button className="border-solid border-black w-max border-2 rounded-sm text-xl align-center py-2 px-6 mt-4">
+          <Link href="mailto:ybortz@yehudabortz.com?subject=Saying Hello From yehudabortz.com 🚀" className=" border-solid border-black w-max border-2 rounded-sm text-xl align-center py-2 px-6 mt-4">
             Email Me!
-          </button>
+          </Link>
 
         </div>
         <div className="lg:w-1/2 w-2/3 ml-0">
@@ -37,6 +37,6 @@ export default function Home() {
           />
         </div>
       </div>
-    </main>
+    </main >
   );
 }
