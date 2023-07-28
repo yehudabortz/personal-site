@@ -13,7 +13,7 @@ export default function Home() {
             I’m Yehuda
           </h1>
           <h2 className="text-black lg:text-6xl text-4xl  font-normal">
-            Software Engineer
+            Senior Software Engineer
           </h2>
           <p className="lg:text-2xl text-xl font-normal max-w-md">
             I'm a specialist in Frontend Engineering and UX Design, with a strong focus on delivering high-performance software rapidly and efficiently.
