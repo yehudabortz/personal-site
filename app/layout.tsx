@@ -5,7 +5,7 @@ import { Darker_Grotesque } from 'next/font/google'
 import Link from 'next/link'
 import Image from "next/image"
 import { Analytics } from '@vercel/analytics/react';
-
+import LogRocket from 'logrocket';
 
 const inter = Darker_Grotesque({ subsets: ['latin'] })
 
@@ -19,6 +19,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  LogRocket.init('zpauwq/yehudabortzcom');
   return (
     <>
       <html lang="en" >
