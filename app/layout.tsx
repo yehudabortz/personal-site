@@ -5,7 +5,8 @@ import { Darker_Grotesque } from 'next/font/google'
 import Link from 'next/link'
 import Image from "next/image"
 import { Analytics } from '@vercel/analytics/react';
-import LogRocket from 'logrocket';
+const LogRocket = require('logrocket');
+
 
 const inter = Darker_Grotesque({ subsets: ['latin'] })
 
@@ -14,12 +15,15 @@ export const metadata = {
   description: "I'm a specialist in Frontend Engineering and UX Design, with a strong focus on delivering high-performance software rapidly and efficiently.",
 }
 
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  LogRocket.init('zpauwq/yehudabortzcom');
+  if (typeof window !== 'undefined') {
+    LogRocket.init('zpauwq/yehudabortzcom');
+  }
   return (
     <>
       <html lang="en" >
