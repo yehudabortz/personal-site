@@ -1,13 +1,16 @@
-import "server-only"
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import LogRocket from 'logrocket';
+import { useEffect } from "react";
 
 
 export default function Home() {
-  if (typeof window !== 'undefined') {
-    LogRocket.init('zpauwq/yehudabortzcom');
-  }
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      LogRocket.init('zpauwq/yehudabortzcom');
+    }
+  }, [])
   return (
     <main>
       <div className="flex lg:flex-row flex-col flex-col-reverse lg:gap-4 gap-4  max-w-screen-2xl w-[90vw] m-auto lg:items-center items-start" >
