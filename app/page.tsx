@@ -1,8 +1,8 @@
 import "server-only"
 import Image from "next/image";
 import Link from "next/link";
+import LogRocket from 'logrocket';
 
-const LogRocket = require('logrocket');
 
 export default function Home() {
   if (typeof window !== 'undefined') {
